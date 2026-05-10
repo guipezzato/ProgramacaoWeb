@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Quiz Interativo</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div id="app">
+        <select id="categoria">
+
+    <option value="9">
+        Conhecimentos Gerais
+    </option>
+
+    <option value="18">
+        Computação
+    </option>
+
+    <option value="21">
+        Esportes
+    </option>
+
+    <option value="23">
+        História
+    </option>
+
+</select>
+
+<select id="dificuldade">
+
+    <option value="easy">
+        Fácil
+    </option>
+
+    <option value="medium">
+        Médio
+    </option>
+
+    <option value="hard">
+        Difícil
+    </option>
+
+</select>
+
+        <div id="inicio">
+
+            <h1>Quiz JavaScript</h1>
+
+            <button id="btnIniciar">
+                Iniciar
+            </button>
+
+        </div>
+
+        <div id="quiz" hidden>
+
+            <div id="progresso"></div>
+
+            <div class="barra">
+                <div id="barraProgresso"></div>
+            </div>
+
+            <div id="timer">
+                Tempo: <span id="tempo">15</span>s
+            </div>
+
+            <h2 id="pergunta"></h2>
+
+            <div id="opcoes"></div>
+
+        </div>
+
+        <div id="resultado" hidden></div>
+
+    </div>
+
+    <script src="script.js"></script>
+
+</body>
+</html>
