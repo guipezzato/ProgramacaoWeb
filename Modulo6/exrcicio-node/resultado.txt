@@ -1,0 +1,2 @@
+[LOG]: Iniciando o sistema - Processado em 19:14:23
+Resultado do cálculo: 40
