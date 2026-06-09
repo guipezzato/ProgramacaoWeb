@@ -28,7 +28,7 @@ jobs:
         uses: actions/upload-pages-artifact@v3
         with:
           # Define que apenas a pasta do seu portfólio será o site principal
-          path: 'Modulo2/portifolio'
+          path: './Modulo2/portifolio'
 
       - name: Deploy to GitHub Pages
         id: deployment
