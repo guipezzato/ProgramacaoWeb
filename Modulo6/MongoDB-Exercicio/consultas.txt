@@ -1,0 +1,28 @@
+// Ver todos
+db.alunos.find()
+
+// Buscar por nome
+db.alunos.find({nome:"João Silva"})
+
+// Filtrar por idade
+db.alunos.find({idade:{$gt:20}})
+
+// Ordenar
+db.alunos.find().sort({idade:1})
+
+// Atualizar
+db.alunos.updateOne(
+{nome:"João Silva"},
+{$set:{idade:21}}
+)
+
+// Adicionar nota
+db.alunos.updateOne(
+{nome:"João Silva"},
+{$push:{notas:10}}
+)
+
+// Remover aluno
+db.alunos.deleteOne(
+{email:"pedro@email.com"}
+)
